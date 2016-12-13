@@ -1,0 +1,534 @@
+/*template info
+Template: Portfolio;
+Developer/Author: Jeremy Redkey;
+Created: December 7th 2016;*/
+
+/*optional imports*/
+
+/*@import url('https://fonts.googleapis.com/css?family=Lato:100,400');
+
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700');*/
+
+
+/*/*main css laws*/
+
+
+* {
+	/*border: 1px solid #c0392b !important;*/
+	color: #2c3e50;
+	font-family: 'Lato', 'Droid', sans-serif;
+}
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+
+
+.page-header {
+	border-bottom: none;
+	font-family: 'Lato';
+	font-weight: 100;
+
+}
+
+
+
+body {
+background-image: url("../../assets/images/congruent_pentagon.png");
+}
+
+section {
+	margin: 0 5% 0 5%;
+	border: 8px solid #2c3e50;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,1);
+}
+
+section .container-fluid {
+	overflow: hidden;
+}
+
+
+
+
+.btn-primary {
+	background-color: #2c3e50;
+	border: #2c3e50;
+	background: -moz-linear-gradient(top,  #2c3e50 50%, #34495e 50%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#33a6cc), color-stop(50%,#0099cc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #2c3e50 50%,#34495e 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #2c3e50 50%,#34495e 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #2c3e50 50%,#34495e 50%); /* IE10+ */
+	background: linear-gradient(to bottom,  #2c3e50 50%,#34495e 50%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33a6cc', endColorstr='#0099cc',GradientType=0 ); /* IE6-9 */
+	-webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.btn-primary .btn-sm {
+  background: #0087cc;
+  box-shadow: 0 5px 0 #006599;
+  color: #ecf0f1;
+  cursor: pointer;
+  font: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 12px 20px;
+  transition: all .1s linear;
+}
+.btn-primary i {
+	color: #ecf0f1;
+}
+
+button:active {
+  box-shadow: 0 2px 0 #006599;
+  transform: translateY(3px);
+  outline:0;
+ }
+
+ button:focus {
+ 	outline:0;
+ }
+
+
+
+/* Profile container */
+.profile {
+  margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+  padding: 20px 0px 10px 0px;
+  background: #2c3e50;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #ecf0f1;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #ecf0f1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+
+
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+    
+.profile-usermenu {
+  margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #93a3b5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: #fafcfd;
+  color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+  color: #5b9bd1;
+  background-color: #f6f9fb;
+  border-left: 2px solid #5b9bd1;
+  margin-left: -2px;
+}
+
+/* Profile Content */
+
+
+
+div .profile-content {
+	margin-right: 20px;
+}
+
+
+a {
+	text-decoration: none;
+	color: #ecf0f1;
+}
+
+
+.portfolio-item {
+	border: 2px solid #2c3e50;
+	padding: 5px;
+
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+.container-fluid {
+	/*background: url("../..assets/images/congruent_pentagon.png") repeat;*/
+}
+
+header {
+	/*background: url("../..assets/images/congruent_pentagon.png") repeat;*/
+	padding: 60px;
+	margin: 0 3% 0 3%;
+
+}
+
+header .header i{
+	color: #e74c3c;
+}
+
+header small {
+	color: #ecf0f1;
+	font-size: 0.75em;
+}
+
+
+header .header {
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	margin: 5px;
+}
+
+ 
+
+
+
+#intro {
+	padding: 20px;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+#h2-container .intro-header{
+	color: #34495e;
+	font-size: 40px;
+}
+
+#h2-container {
+	text-align: right;
+	background-color: #ecf0f1;
+	font-weight: 400;
+	padding-bottom: 20px;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+
+#image-browser .img-responsive {
+	background-color: #eee;
+	float: right;
+	padding: 5px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.container-fluid {
+	margin: 2% 5% 2% 5%;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+#portfolio-profile-img {
+	margin-top: 20px;
+	width: 250px;
+	max-width: 100%;
+	height: 150px;
+	border-radius: 50%;
+	-webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+
+}
+
+
+#talkbubble {
+   width: 80%;
+   height: 100px;
+   display: inline-flex;
+   margin: 15px auto;
+   transition: all .2s ease-in-out; 
+   background: #ecf0f1;
+   position: relative;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+   -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+#talkbubble:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 26px;
+   width: 0;
+   height: 0;
+   border-top: 13px solid transparent;
+   border-right: 26px solid #ecf0f1;
+   border-bottom: 13px solid transparent;
+}
+
+#talkbubble:hover {
+	transform: scale(1.1);
+}
+
+
+.col-xs-2 .col-md-8 {
+	padding: 20px;
+	margin-left: 10px;
+}
+
+#talkbubble .paragraph {
+	font-size: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	font-weight: bold;
+	color: #2c3e50;
+	margin-bottom: 200px;
+	visibility:hidden;
+	transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+}
+
+#talkbubble:hover .paragraph{
+	transform: scale(1);
+	visibility:visible;
+	opacity:1;
+  transition-delay:0s;
+
+}
+
+
+#talkbubble:hover {
+	transform: scale(1.);
+} 
+
+.col-md-9 .col-lg-10 {
+	overflow: hidden;
+
+}
+
+
+
+#gameCanvas {
+	padding: 0;
+	margin: 0 auto;
+	max-width: 100%;
+	border: 5px solid #ecf0f1;
+
+}
+
+.paragraph {
+	margin: 10px auto;
+	color: #2c3e50;
+	font-weight: bold;
+}
+
+.page-header {
+	font-weight: 800;
+	font-size: 60px;
+}
+
+
+.row {
+	background-color: #16a085;
+}
+
+.col-md-5 .paragraph {
+	margin-bottom: 0;
+}
+
+
+
+
+.col-md-8 .paragraph {
+	margin-bottom: 90px;
+	overflow: hidden;
+	font-size: 20px;
+
+}
+
+
+.portfolio-item img {
+	margin: 0 auto;
+}
+
+.portfolio-item:hover {
+    background: #1abc9c;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+
+.portfolio-item:hover h2 {
+	font-weight: 800;
+}
+
+
+/*Contact Form and Social Footer*/
+
+
+
+
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin: 0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	margin: 0 5px -5 -5;
+  display: inline;
+  float: right;
+
+}
+
+ul.social-network li i{
+color: #2c3e50;
+}
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+
+.social-network a.icoEmail:hover {
+	background-color:#e74c3c;
+}
+
+.social-network a.icoEmail:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color: #ecf0f1;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #ecf0f1;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+footer {
+	margin: 5%;
+}
